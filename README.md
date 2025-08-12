@@ -70,6 +70,20 @@ uvicorn main:app --reload
 
 The application will be available at `http://127.0.0.1:8000`.
 
+## Running Tests
+
+To run the tests, you first need to install the test dependencies. Note that this command will also install the project in editable mode:
+
+```bash
+uv pip install -e .[test]
+```
+
+Once the dependencies are installed, you can run the tests using `pytest`:
+
+```bash
+pytest
+```
+
 ## Available API Endpoints
 
 The application has the following endpoints:
